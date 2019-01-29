@@ -1,0 +1,78 @@
+
+.discography {
+    padding-bottom: 50px;
+    background-image: url();
+}
+
+.discography__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "Myriad Pro", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+
+
+}
+
+ .discography__sub-title {
+    font-size: 15px;
+    font-family: "OpenSans", sans-serif;
+    text-align: center;
+    color: rgb(122, 128, 131);
+
+ } 
+
+ .disc__year {
+    font-size: 15px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    text-transform: uppercase;
+
+  }
+  .disc__title {
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgb(0, 0, 2);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .disc__short-description {
+    font-size: 24px;
+    font-family: "OpenSans, sans-serif";
+    color: rgb(0, 0, 2);
+    line-height: 1.011;
+    text-align: justifyLeft;
+    position: absolute;
+    left: 51.937px;
+    top: 1767.254px;
+    width: 563px;
+    height: 24px;
+    z-index: 29;
+  }
+  .disc__description {
+    font-size: 15px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(170, 170, 170);
+    text-align: justify;
+    
+  }
+
+
+  .disc__btn-play {
+    display: inline-block;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 15px;
+    font-family: "OpenSans", sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 14px 40px;
+   
+    
+  }
+        
+  
