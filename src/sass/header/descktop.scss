@@ -1,0 +1,39 @@
+.header__inner {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+}
+
+.contacts__mail {
+    vertical-align: middle;
+    padding-right: 22px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.phones-wrapper__item,
+.logo {
+    display: block;
+}
+
+.contacts__mail,
+.phones-wrapper__item {
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #000;
+
+
+}
+
+
