@@ -4,8 +4,7 @@
 }
 
 .about-me__title {
-    font-size: 25px;
-    font-weight: 900px;
+    margin-bottom: 26px;
 }
 
 .about-me__slider {
@@ -25,7 +24,14 @@
 .requirements__wrapper {
     display: flex;
     justify-content: space-between;
+}
 
+.after-course__wrapper {
+    margin: 60px 0 70px;
+}
+
+.requirements__wrapper {
+    margin-top: 40px;
 }
 
 .after-course__content,
@@ -34,28 +40,34 @@
 }
 
 .requirements__slider {
-    width: 480px;
+    width: 482px;
     height: 298px;
-    position: relative;
     padding: 56px 40px 56px 50px;
+    margin-right: 40px;     
+}
+
+.slider {
+    position: relative;
 
     &::before {
-        content: '';
-        background-image: url(../images/arrow.jpg);
+        content: '◀';
         position: absolute;
-        left: -36px;
-        top: 10px;
-        width: 16px;
-        height: 24px;
-        display: inline-block;
-        // width: 0;
-        // height: 0;
-        // border-top: 50px solid transparent;
-        // border-right: 100px solid red;
-        // border-bottom: 50px solid transparent;
-    }        
-  
-
+        left: -42px;
+        top: 65px;
+        font-size: 50px;
+        color: #d1d2d3;
+        cursor: pointer;        
+    }
+    
+    &::after {
+        content: '▶';
+        position: absolute;
+        right: -42px;
+        top: 65px;
+        font-size: 50px;
+        color: #d1d2d3;
+        cursor: pointer;
+    }  
 }
 
 .requirements-slider__text {
@@ -73,125 +85,46 @@
         color: #fff;
         transform: rotate(270deg);  
     }  
+}  
+
+.slider__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: medium;
 }
-  
+
+.after-course__title,
+.about-me__title,
+.requirements__title {
+    font-size: 35.43px;
+    font-weight: bold;
+    line-height: 1.364;   
+}
+
+.after-course__title {
+    margin: 56px 0 30px;
+}
+
+.black-back {
+    background: #000;
+    color: #fff;
+}
+
+.after-course__text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 74px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 56px;
+        height: 8px;
+        background-color: #000;
+    }
+}
 
 
-
-
-
-
-
-// .subtitle-text{
-//     font-size: 14px;
-// }
-// .inner__title{
-//     font-size: 25px;
-//     font-weight: 900px;
-//     // text-align: center;
-//     // margin: 0 0 20px 0;
-// }
-// .black-back{
-//     background-color: rgb(0, 0, 0);
-//     color: rgb(255, 255, 255);
-// }
-// .section__slider{
-//     margin: 0 auto;
-//     position: relative;  
-// }
-// .section__slider--first{
-//     width:300px;
-//     height:150px;
-// }
-// .slider__btn{
-//     position: absolute;
-//     top: 50%;
-//     width: 15px;
-//     height: 15px;
-//     background-color:rgb(140, 141, 141);
-//     border:none;
-//     cursor: pointer;
-// }
-
-// .slider__btn--left{
-//     left:0;
-//     transform: translateY(-50%)
-// }
-// .slider__btn--right{
-//     right:0;
-//     transform: translateY(-50%) rotate(180deg);
-// }
-
-// .slider-box{
-//     box-shadow: -3px 2px 10px rgba(163, 163, 163, 0.5);
-//     margin: 0 auto;
-// }
-
-// .slider-box--size-sm{
-//     width:240px;
-//     height:150px;
-// }
-// .box-inner{
-//     display: flex;
-//     flex-direction: column;
-//     padding: 12px 30px 36px 28px;    
-// }
-// .box-inner__red-small-box{
-//     width: 8px;
-//     height: 8px;
-//     background-color: orangered;    
-// }
-// .box-inner__box-text{
-//     margin: 10px 0 0 0;
-// }
-// .section__inner--wrap{
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-// }
-// .section__inner--content{
-//     flex-direction: column;
-  
-// }
-// .content_info{
-//     display: flex;
-//     justify-content: space-between;
-//     width: 320px;
-// }
-// .content-item{
-//     margin-top: 5px;
-//     width:50px;
-//     height:8px ;
-//     background-color: rgb(0, 0, 0);
-// }
-// .content-text{
-//    width: 250px;
-//    margin: 0;
-//    margin-bottom: 10px;
-
-// }
-// .content__img{
-//     width: 250px;
-//     height: 300px;
-//     background-image: url(./img/man-on-chair.png);
-//     background-color: grey;
-//     background-size: cover;
-// }
-// .wrap__img{
-//     width: 270px;
-//     height:300px;
-//     background-image: url(./img/man-glass.jpg);
-//     background-color: grey;
-//     background-size: cover;
-//     margin: 0 auto;
-// }
-// .slider-box--size-big{
-//     width:270px;
-    
-// }
-// .section__slider--second{
-//     width:320px;
-// }
-// .slider-box__box-text{
-//     padding: 35px 10px;
-// }
