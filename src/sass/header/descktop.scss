@@ -1,14 +1,25 @@
 .header__inner {
     margin-top: 32px;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .contacts {
     display: flex;
     align-items: center;
 
+    &_logo {
+        font-size: 12px;
+    }
+}
+
+.contacts__mail,
+.phones-wrapper__item {
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Acrom", sans-serif;
+    font-weight: bold;
+    color: #000;
 }
 
 .contacts__mail {
@@ -26,14 +37,6 @@
     display: block;
 }
 
-.contacts__mail,
-.phones-wrapper__item {
-    text-decoration: none;
-    font-size: 10px;
-    font-family: "Myriad Pro", sans-serif;
-    color: #000;
 
-
-}
 
 

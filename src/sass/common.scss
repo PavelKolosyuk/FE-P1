@@ -1,7 +1,9 @@
 
 .section,
-.header {
+.header,
+.footer {
   min-width: 320px;
+  font-family: "Acrom", sans-serif;
 
   &__inner {
     max-width: 898px;
