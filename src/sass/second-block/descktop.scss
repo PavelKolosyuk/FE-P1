@@ -1,6 +1,5 @@
 .second-block{
     padding-top:65px;  
-
 }
 
 .about-me__title {
@@ -8,8 +7,8 @@
 }
 
 .about-me__slider {
-    width:320px;
-    height:185px;
+    width: 320px;
+    height: 185px;
     margin: 0 auto;
     position: relative;
     padding: 40px 40px 40px 30px;  
@@ -24,6 +23,7 @@
 .requirements__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
 }
 
 .after-course__wrapper {
@@ -42,8 +42,7 @@
 .requirements__slider {
     width: 482px;
     height: 298px;
-    padding: 56px 40px 56px 50px;
-    margin-right: 40px;     
+    padding: 56px 40px 56px 50px;     
 }
 
 .slider {
@@ -52,7 +51,7 @@
     &::before {
         content: '◀';
         position: absolute;
-        left: -42px;
+        left: -62px;
         top: 65px;
         font-size: 50px;
         color: #d1d2d3;
@@ -62,7 +61,7 @@
     &::after {
         content: '▶';
         position: absolute;
-        right: -42px;
+        right: -62px;
         top: 65px;
         font-size: 50px;
         color: #d1d2d3;

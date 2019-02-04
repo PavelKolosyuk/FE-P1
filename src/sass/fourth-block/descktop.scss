@@ -1,7 +1,9 @@
 .footer {
-    max-width: 898px;
-    padding: 10px 10px;
+    padding-top: 44px;
     margin: 0 auto;
+}
+.text,.footer__btn {
+    font-family: 'Acrom', sans-serif;
 }
 
 .confirm__wrapper {
@@ -11,31 +13,33 @@
     width: 416px;
     height: 305px;
     box-shadow: rgb(0,0,0) 0px 0px 42px -12px;
-    margin: auto;
-    padding: 4.9%;
+    margin: 0 auto;
+    max-width: 848px;
 }
 
 .confirm__inner-left {
-    flex-basis: 50%;
+    flex-basis:48%;
     text-align: right;
+    padding-top: 48px;
 }
 
 .confirm__inner-right {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    padding-left: 5px;
+    flex-basis: 48%;
+    margin-left: 10px;
+    padding-top: 48px;
 }
 
 .inner__title {
-    font-family: 'Acrom', sans-serif;
+    
     font-weight: 700;
     font-size: 12.5px;
     display: inline-block;
     text-align: right;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: black;
+    background-color: #000000;
     line-height: 1.3em;
     margin-top: 4px;
 }
@@ -50,12 +54,11 @@
 
 .inner__sub-title {
     position: relative;
-    font-family: 'Acrom', sans-serif;
     font-weight: 700;
     font-size: 12.5px;
     display: inline-block;
     text-transform: uppercase;
-    color: black;
+    color: #000000;
     line-height: 1.3em;
     margin-top: 4px;
 }
@@ -85,17 +88,13 @@
 }
 
 .text--orange {
-    font-family: 'Acrom', sans-serif;
     font-size: 14.58px;
     font-weight: 500;
     color: #ff6b08;
     position: relative;
     margin-top: 20px;
     margin-left: 70px;
-    padding-top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 0 10px 10px;
     line-height: 1.4em;
 }
 
@@ -108,7 +107,7 @@
     top: 6px;
     width: 3px;
     transform: rotate(30deg);
-    background-color: black;
+    background-color: #000000;
 }
 
 .button__wrapper {
@@ -126,16 +125,15 @@
     background: #ff6b08;
     font-size: 13.51px;
     line-height: 17px;
-    font-family: 'Acrom', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 135px;
     box-shadow: 0px 9px 13px 0px rgba(184, 93, 39, 0.26);
     cursor: pointer;
+    transition: all .3s linear;
 }
 
 .footer__btn:hover {
-    transition: all .3s linear;
     box-shadow: rgba(255, 107, 8, .6) 0px 0px 43px 0px;
 }
