@@ -203,4 +203,25 @@
 .program-task__14 { 
   grid-area: 10 / 2 / 11 / 3;
 }
+
+.course-program__wrapper {
+  position: relative;
+    
+  &::before {
+    position: absolute;
+    content: 'PROGRAMM';
+    right: -690px;
+    top: 500px;
+    font-size: 250px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    z-index: -2;
+    transform: rotate(90deg);
+  }
+}
+
+
+
+
   

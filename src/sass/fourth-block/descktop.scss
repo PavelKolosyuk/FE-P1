@@ -1,10 +1,6 @@
 .footer {
     padding-top: 44px;
-    // margin: 0 auto;
 }
-// .text,.footer__btn {
-//     font-family: 'Acrom', sans-serif;
-// }
 
 .confirm__wrapper {
     position: relative;
@@ -12,9 +8,7 @@
     flex-wrap: wrap;
     width: 416px;
     height: 305px;
-    // box-shadow: rgb(0,0,0) 0px 0px 42px -12px;
     margin: 0 auto;
-    // max-width: 848px;
 }
 
 .confirm__inner-left {
@@ -51,14 +45,6 @@
     }
 }
 
-// .inner__title:first-child {
-//     margin-top: 0;
-// }
-
-// .inner__title:nth-child(2n+2) {
-//     margin-top: 26px;
-// }
-
 .inner__sub-title {
     position: relative;
     font-weight: 700;
@@ -94,18 +80,6 @@
     background-color: #ff6b08;
 }
 
-// .inner__sub-title:first-child {
-//     margin-top: 2px;
-// }
-
-// .inner__sub-title:nth-child(-2n+2) {
-//     margin-top: 47px;
-// }
-
-// .inner__sub-title:nth-child(3n+3) {
-//     margin-top: 25px;
-// }
-
 .text--orange {
     font-size: 14.58px;
     font-weight: 500;
@@ -128,18 +102,6 @@
         background-color: #000000;
     }
 }
-
-// .text--orange::before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     height: 30px;
-//     left: -18px;
-//     top: 6px;
-//     width: 3px;
-//     transform: rotate(30deg);
-//     background-color: #000000;
-// }
 
 .button__wrapper {
     position: relative;
@@ -168,7 +130,3 @@
         box-shadow: rgba(255, 107, 8, .6) 0px 0px 43px 0px;
     }
 }
-
-// .footer__btn:hover {
-//     box-shadow: rgba(255, 107, 8, .6) 0px 0px 43px 0px;
-// }

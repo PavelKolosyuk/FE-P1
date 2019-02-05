@@ -48,21 +48,27 @@
         content: '';
         position: absolute;
         background: url(../images/arrow.svg);
-        left: -62px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: -40px;
         top: 65px;
-        height: 50px;
-        width: 30px;
-        cursor: pointer;        
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        transform: rotate(180deg);        
     }
     
     &::after {
         content: '';
         position: absolute;
-        right: -62px;
+        background: url(../images/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: -40px;
         top: 65px;
-        font-size: 50px;
-        color: #d1d2d3;
-        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        cursor: pointer; 
     }  
 }
 
@@ -116,11 +122,26 @@
         content: '';
         position: absolute;
         left: 0;
-        top: 0;
+        top: 6px;
         width: 56px;
         height: 8px;
         background-color: #000;
     }
 }
 
-
+.about-me__wrapper {
+    position: relative;
+  
+    &::before {
+        position: absolute;
+        content: 'GO IT';
+        right: -290px;
+        top: -370px;
+        font-size: 250px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #f2f2f2;
+        z-index: -2;
+        transform: rotate(90deg);
+    }
+}
