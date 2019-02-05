@@ -14,12 +14,14 @@
 }
 
 .contacts__mail,
-.phones-wrapper__item {
+.contacts__phone {
     text-decoration: none;
-    font-size: 10px;
-    font-family: "Acrom", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
     font-weight: bold;
     color: #000;
+    position: relative;
+    padding-left: 15px;
 }
 
 .contacts__mail {
@@ -32,11 +34,27 @@
     justify-content: center;
 }
 
-.phones-wrapper__item,
+.contacts__phone,
 .logo {
     display: block;
 }
 
+.contacts__phone::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 2px;
+    background: url(../images/phone.svg);
+    width: 12px;
+    height: 12px;        
+}
 
-
-
+.contacts__mail::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 2px;
+    background: url(../images/mail.svg);
+    width: 15px;
+    height: 15px;        
+}

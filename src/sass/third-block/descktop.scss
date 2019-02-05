@@ -2,13 +2,13 @@
   padding-top: 160px;
 }
   
-.course-program__wrapper {
-  max-width: 848px;
-  margin: 0 auto;
-}
+// .course-program__wrapper {
+//   max-width: 848px;
+//   margin: 0 auto;
+// }
   
 .body-title {
-  font-family: 'Acrom',sans-serif;
+  // font-family: 'Acrom',sans-serif;
   font-weight: 900;
 }
   
@@ -30,8 +30,9 @@
   color: #3f4144;
 }
   
-.text,.homework {
-  font-family: 'Acrom',sans-serif;
+.text,
+.homework {
+  // font-family: 'Acrom',sans-serif;
   font-weight: 400;
   font-size: 10.42px;
 }
@@ -54,7 +55,7 @@
   
 .name-program {
   counter-increment: steps;
-  font-family: 'Acrom',sans-serif;
+  // font-family: 'Acrom',sans-serif;
   font-weight: 900;
   overflow: hidden;
 }
@@ -63,7 +64,8 @@
   grid-area: 1 / 1 / 2 / 2;
 }
   
-.name-program,.program {
+.name-program,
+.program {
   padding-left: 60px;
   position: relative;
 }

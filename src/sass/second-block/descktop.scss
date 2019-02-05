@@ -15,10 +15,6 @@
   
 }
 
-.box-shadow {
-    box-shadow: -3px 2px 10px rgba(163, 163, 163, 0.5);
-}
-
 .after-course__wrapper,
 .requirements__wrapper {
     display: flex;
@@ -49,17 +45,18 @@
     position: relative;
 
     &::before {
-        content: '◀';
+        content: '';
         position: absolute;
+        background: url(../images/arrow.svg);
         left: -62px;
         top: 65px;
-        font-size: 50px;
-        color: #d1d2d3;
+        height: 50px;
+        width: 30px;
         cursor: pointer;        
     }
     
     &::after {
-        content: '▶';
+        content: '';
         position: absolute;
         right: -62px;
         top: 65px;
