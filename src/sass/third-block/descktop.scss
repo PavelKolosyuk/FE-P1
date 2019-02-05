@@ -1,0 +1,227 @@
+.course-program {
+  padding-top: 160px;
+}
+  
+// .course-program__wrapper {
+//   max-width: 848px;
+//   margin: 0 auto;
+// }
+  
+.body-title {
+  // font-family: 'Acrom',sans-serif;
+  font-weight: 900;
+}
+  
+.course-program__title {
+  background-color: #000000;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 57.5px;
+  margin-bottom: 60px;
+}
+  
+.name-program__title {
+  text-transform: uppercase;
+  font-size: 12.5px;
+  margin-bottom: 20px;
+}
+  
+.name-program__text {
+  color: #3f4144;
+}
+  
+.text,
+.homework {
+  // font-family: 'Acrom',sans-serif;
+  font-weight: 400;
+  font-size: 10.42px;
+}
+  
+.homework {
+  display: inline-block;
+  background-color: #f1682a;
+  color: #ffffff;
+  padding: 0;  
+  margin-bottom: 10px;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 20px;
+  grid-auto-rows: auto;
+  margin-bottom: 42px;
+}
+  
+.name-program {
+  counter-increment: steps;
+  // font-family: 'Acrom',sans-serif;
+  font-weight: 900;
+  overflow: hidden;
+}
+  
+.name-program__1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+  
+.name-program,
+.program {
+  padding-left: 60px;
+  position: relative;
+}
+  
+.name-program::before {
+  content: "0"counter(steps)".";
+  position: absolute;
+  font-size: 37.5px;
+  top: 0;
+  left: -12px;
+}
+  
+.name-program--reset::before {
+  content: ""counter(steps)".";
+  position: absolute;
+  font-size: 37.5px;
+  top: 0;
+  left: -6px;
+}
+  
+.name-program::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 15%;
+  width: 7px;
+  height: 7px;
+  background: #f1682a;
+} 
+  
+.name-program__2 {
+  grid-area: 1 / 2 / 2 / 3; 
+}   
+  
+.name-program__3 { 
+  grid-area: 1 / 3 / 2 / 4; 
+}
+  
+.name-program__4 { 
+  grid-area: 3 / 1 / 4 / 2; 
+}
+  
+.name-program__5 { 
+  grid-area: 3 / 2 / 4 / 3; 
+}
+  
+.name-program__6 { 
+  grid-area: 3 / 3 / 4 / 4; 
+}
+  
+.name-program__7 { 
+  grid-area: 5 / 1 / 6 / 2; 
+}
+  
+.name-program__8 { 
+  grid-area: 5 / 2 / 6 / 3; 
+}
+  
+.name-program__9 { 
+  grid-area: 5 / 3 / 6 / 4; 
+}
+  
+.name-program__10 { 
+  grid-area: 7 / 1 / 8 / 2; 
+}
+  
+.name-program__11 { 
+  grid-area: 7 / 2 / 8 / 3; 
+}
+  
+.name-program__12 { 
+  grid-area: 7 / 3 / 8 / 4; 
+}
+  
+.name-program__13 { 
+  grid-area: 9 / 1 / 10 / 2; 
+}
+  
+.name-program__14 { 
+  grid-area: 9 / 2 / 10 / 3; 
+}
+  
+.program-task__1 { 
+  grid-area: 2 / 1 / 3 / 2;   
+}
+  
+.program-task__2 { 
+  grid-area: 2 / 2 / 3 / 3;
+}
+  
+.program-task__3 { 
+  grid-area: 2 / 3 / 3 / 4;
+}
+  
+.program-task__4 { 
+  grid-area: 4 / 1 / 5 / 2;
+}
+  
+.program-task__5 { 
+  grid-area: 4 / 2 / 5 / 3;
+}
+  
+.program-task__6 { 
+  grid-area: 4 / 3 / 5 / 4;
+}
+  
+.program-task__7 { 
+  grid-area: 6 / 1 / 7 / 2;
+}
+  
+.program-task__8 { 
+  grid-area: 6 / 2 / 7 / 3;
+}
+  
+.program-task__9 { 
+  grid-area: 6 / 3 / 7 / 4;
+}
+  
+.program-task__10 { 
+  grid-area: 8 / 1 / 9 / 2;
+}
+  
+.program-task__11 { 
+  grid-area: 8 / 2 / 9 / 3;
+}
+  
+.program-task__12 { 
+  grid-area: 8 / 3 / 9 / 4;
+}
+  
+.program-task__13 { 
+  grid-area: 10 / 1 / 11 / 2;
+}
+  
+.program-task__14 { 
+  grid-area: 10 / 2 / 11 / 3;
+}
+
+.course-program__wrapper {
+  position: relative;
+    
+  &::before {
+    position: absolute;
+    content: 'PROGRAMM';
+    right: -690px;
+    top: 500px;
+    font-size: 250px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    z-index: -2;
+    transform: rotate(90deg);
+  }
+}
+
+
+
+
+  
