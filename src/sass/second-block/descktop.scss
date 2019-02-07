@@ -2,135 +2,40 @@
     padding-top:65px;  
 }
 
-.about-me__title {
-    margin-bottom: 26px;
-}
-
-.about-me__slider {
-    width: 320px;
-    height: 185px;
-    margin: 0 auto;
-    position: relative;
-    padding: 40px 40px 40px 30px;  
-  
-}
-
-.after-course__wrapper,
-.requirements__wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 40px;
-}
-
-.after-course__wrapper {
-    margin: 60px 0 70px;
-}
-
-.requirements__wrapper {
-    margin-top: 40px;
-}
-
-.after-course__content,
-.after-course-photo__inner {
-    flex-basis: 50%;
-}
-
-.requirements__slider {
-    width: 482px;
-    height: 298px;
-    padding: 56px 40px 56px 50px;     
-}
-
-.slider {
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        background: url(../images/arrow.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: -40px;
-        top: 65px;
-        height: 24px;
-        width: 24px;
-        cursor: pointer;
-        transform: rotate(180deg);        
-    }
-    
-    &::after {
-        content: '';
-        position: absolute;
-        background: url(../images/arrow.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        right: -40px;
-        top: 65px;
-        height: 24px;
-        width: 24px;
-        cursor: pointer; 
-    }  
-}
-
-.requirements-slider__text {
-    position: relative;
-
-    &::after {
-        content: ' [001] ';
-        position: absolute;
-        left: -36px;
-        top: 10px;
-        background-color: #ef7330;
-        font-size: 10px;
-        line-height: 1.3;
-        font-weight: bold;
-        color: #fff;
-        transform: rotate(270deg);  
-    }  
-}  
-
-.slider__text {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: medium;
-}
-
-.after-course__title,
-.about-me__title,
-.requirements__title {
+%title-common-style {
     font-size: 35.43px;
     font-weight: bold;
-    line-height: 1.364;   
+    line-height: 1.364;
 }
 
-.after-course__title {
-    margin: 56px 0 30px;
+%slider-common-style {
+    content: '';
+    position: absolute;
+    background: url('../images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 65px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
 }
 
-.black-back {
-    background: #000;
-    color: #fff;
-}
-
-.after-course__text {
-    font-size: 16px;
-    line-height: 1.5;
-    padding-left: 74px;
+.about-me {
     position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 6px;
-        width: 56px;
-        height: 8px;
-        background-color: #000;
+    &__title {
+        margin-bottom: 26px;
+        @extend %title-common-style;
     }
-}
 
-.about-me__wrapper {
-    position: relative;
+    &__slider {
+        width: 320px;
+        height: 185px;
+        margin: 0 auto;
+        position: relative;
+        padding: 40px 40px 40px 30px;  
+    
+    }
   
     &::before {
         position: absolute;
@@ -144,4 +49,96 @@
         z-index: -2;
         transform: rotate(90deg);
     }
+}
+
+.after-course {
+    margin: 60px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+
+    &__content {
+        flex-basis: 50%;
+    }
+
+    &__photo {
+        flex-basis: 50%;
+    }
+
+    &__title {
+        margin: 56px 0 30px;
+        @extend %title-common-style;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 74px;
+        position: relative;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 56px;
+            height: 8px;
+            background-color: #000;
+        }
+    }
+}
+
+.requirements {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+
+    &__title {
+        @extend %title-common-style;
+    }
+
+    &__slider {
+        width: 482px;
+        height: 298px;
+        padding: 56px 40px 56px 50px;     
+
+        &__text {
+            position: relative;
+        
+            &::after {
+                content: ' [001] ';
+                position: absolute;
+                left: -36px;
+                top: 10px;
+                background-color: #ef7330;
+                font-size: 10px;
+                line-height: 1.3;
+                font-weight: bold;
+                color: #fff;
+                transform: rotate(270deg);  
+            }  
+        }  
+    }
+}
+
+.slider {
+    position: relative;
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: medium;
+    }
+
+    &::before {
+        @extend %slider-common-style;
+        transform: rotate(180deg);     
+        left: -40px;        
+    }
+    
+    &::after {
+        @extend %slider-common-style;
+        right: -40px; 
+    }  
 }
