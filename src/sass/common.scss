@@ -1,15 +1,12 @@
 
-.section,
-.header,
-.footer {
+.block-inner,
+.header {
   min-width: 320px;
   font-family: "Acrom", sans-serif;
-
-  &__inner {
-    max-width: 898px;
-    padding: 0 25px;
-    margin: 0 auto;
-  }
+  max-width: 898px;
+  padding: 0 25px;
+  margin: 0 auto;
+  
 }
 
 .box-shadow {
