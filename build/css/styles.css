@@ -522,6 +522,12 @@ table {
   background: #f1682a;
 }
 
+.course-program__text {
+  font-weight: 400;
+  padding-left: 70px;
+  font-size: 10px;
+}
+
 .body-title,
 .container {
   font-weight: 900;
@@ -556,20 +562,21 @@ table {
   left: -6px;
 }
 
-.inner__text,
-.task,
-.task__text {
+.task__titles {
   font-weight: 400;
   padding-left: 70px;
   font-size: 10px;
-}
-
-.task {
   display: inline-block;
   margin: 20px 0 10px 70px;
   background-color: #f1682a;
   color: #fff;
   padding: 0;
+}
+
+.task__text {
+  font-weight: 400;
+  padding-left: 70px;
+  font-size: 10px;
 }
 
 .fourth-block {
